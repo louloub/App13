@@ -76,6 +76,20 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CustomPopup customPopup = new CustomPopup(activity);
+                customPopup.setTitle("Bonne année 2019");
+                customPopup.setSubTitle("Abonnez vous");
+                customPopup.build();
+            }
+        });
+    }
+}
+
+
+        /*
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 AlertDialog.Builder myPopup = new AlertDialog.Builder(activity);
                 myPopup.setTitle("3 ème salut");
                 myPopup.setMessage("3 ème fois que ton téléphone te parle");
@@ -97,6 +111,4 @@ public class MainActivity extends AppCompatActivity {
                 myPopup.show();
             }
         });
-
-    }
-}
+        */

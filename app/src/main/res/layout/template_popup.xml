@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="@dimen/size_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_popup"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:textSize="@dimen/size_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_title_popup"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@string/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <Button
+            android:id="@string/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button5"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="187dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
