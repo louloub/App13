@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // On instancie le builder de AlerteDlalog
                 AlertDialog.Builder myPopup = new AlertDialog.Builder(activity);
                 myPopup.setTitle("Salut");
                 myPopup.setMessage("Salut les gens c'est ton téléphone qui te parle");
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         /*
+        ---- CODE FONCTIONNEL ----
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
