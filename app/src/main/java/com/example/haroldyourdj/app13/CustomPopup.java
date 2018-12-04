@@ -16,7 +16,7 @@ public class CustomPopup extends Dialog {
 
     // constructor
     public CustomPopup(Activity activity) {
-        super(activity, R.style.Theme_AppCompat_Dialog);
+        super(activity, R.style.Theme_AppCompat_DayNight_Dialog_Alert);
         setContentView(R.layout.template_popup);
         this.title_popup = "Mon titre";
         this.sub_title_popup = "Mon super sous titre";
@@ -30,34 +30,33 @@ public class CustomPopup extends Dialog {
 
     // Méthods
     // on affecte la valeur de title à title_popup
-    public void setTitle(String title)
-    {
+    public void setTitle(String title) {
         this.title_popup = title;
     }
 
-    public void setSubTitle(String sub_title_popup)
-    {
-        this.title_popup = sub_title_popup;
+    public void setSubTitle(String sub_title_popup) {
+
+        this.sub_title_popup = sub_title_popup;
     }
 
     public Button getButton1()
+
     {
         return button_popup_1;
-    };
-
-    public Button getButton2()
-    {
-        return button_popup_2;
-    };
-
-    public void build (){
-        show();
-
-
-        tv1.setText(R.id.tv1);
-        tv2.setText(R.id.tv2);
-
-
     }
 
+    ;
+
+    public Button getButton2() {
+        return button_popup_2;
+    }
+
+    ;
+
+    public void build() {
+        show();
+
+        tv1.setText(title_popup);
+        tv2.setText(sub_title_popup);
+    }
 }
